@@ -1,0 +1,27 @@
+[
+  {
+    "name": "ABC Corp",
+    "address": "123 Main St, Cityville",
+    "phone": "123-456-7890",
+    "website": "https://www.abccorp.com",
+    "image": "abccorp.jpg",
+    "membership": 3
+  },
+  {
+    "name": "XYZ Inc",
+    "address": "456 Elm St, Townsville",
+    "phone": "987-654-3210",
+    "website": "https://www.xyzinc.com",
+    "image": "xyzinc.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Widgets Co",
+    "address": "789 Oak St, Villagetown",
+    "phone": "555-123-4567",
+    "website": "https://www.widgetsco.com",
+    "image": "widgetsco.jpg",
+    "membership": 1
+  }
+
+]

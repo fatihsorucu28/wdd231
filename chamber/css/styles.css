@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #004080;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+.view-toggle {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.view-toggle button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+#members {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.grid-view {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.list-view {
+  grid-template-columns: 1fr;
+}
+
+.member-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+.member-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.member-card h3 {
+  margin-top: 0.5rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
