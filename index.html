@@ -1,1 +1,63 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Course Home Page for WDD 231" />
+  <meta name="author" content="Fatih Sorucu" />
+  <title>WDD 231 | Home</title>
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <img src="images/profileimage.jpg" alt="Fatih's Profile Photo" />
+    <span>Fatih Sorucu</span>
+  </header>
+
+  <nav>
+    <button id="menuBtn">☰</button>
+    <ul id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="#">Chamber</a></li>
+      <li><a href="#">Final</a></li>
+      <li><a href="https://github.com/fatihsorucu28">GitHub Profile</a></li>
+      <li><a href="https://linkedin.com/in/fatihsorucu">LinkedIn</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+
+    <section>
+      <h2>About This Course</h2>
+      <p>Details about what you're learning this semester.</p>
+    </section>
+
+    <section>
+      <h2>Course Certificate</h2>
+      <div id="courseContainer"></div>
+      <p>Total Credits: <span id="creditCount">0</span></p>
+      <button onclick="filterCourses('all')">All</button>
+      <button onclick="filterCourses('wdd')">WDD Courses</button>
+      <button onclick="filterCourses('cse')">CSE Courses</button>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Contact info or relevant links.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Fatih Sorucu | Turkey</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

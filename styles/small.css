@@ -1,0 +1,103 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #003366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+nav {
+  background-color: #005599;
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+nav ul {
+  display: none;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav ul.open {
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 0.75rem;
+  display: block;
+}
+
+nav a.active {
+  background: #003366;
+}
+
+main {
+  padding: 1rem;
+}
+
+section {
+  background: white;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.course {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-left: 5px solid #005599;
+}
+
+.course.completed {
+  background: #e0ffe0;
+  border-left-color: green;
+}
+
+button {
+  margin: 0.5rem 0.25rem;
+  padding: 0.5rem 1rem;
+  background: #005599;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #003366;
+}
