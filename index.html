@@ -3,60 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Course Home Page for WDD 231" />
+  <meta name="description" content="San Miguel Chamber of Commerce - Home Page" />
   <meta name="author" content="Fatih Sorucu" />
-  <title>WDD 231 | Home</title>
+  <title>San Miguel Chamber of Commerce</title>
   <link rel="stylesheet" href="styles/normalize.css" />
   <link rel="stylesheet" href="styles/small.css" />
   <link rel="stylesheet" href="styles/larger.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlight.js" defer></script>
   <script src="scripts/date.js" defer></script>
-  <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
   <header>
-    <img src="images/profileimage.jpg" alt="Fatih's Profile Photo" />
-    <span>Fatih Sorucu</span>
+    <img src="images/logo.png" alt="San Miguel Chamber Logo" />
+    <h1>San Miguel Chamber of Commerce</h1>
   </header>
 
   <nav>
     <button id="menuBtn">☰</button>
     <ul id="navLinks">
       <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="chamber/directory.html">Chamber</a></li>
-      <li><a href="#">Final</a></li>
-      <li><a href="https://github.com/fatihsorucu28">GitHub Profile</a></li>
-      <li><a href="https://linkedin.com/in/fatihsorucu">LinkedIn</a></li>
+      <li><a href="chamber/directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
   </nav>
 
   <main>
-    <h1>Home</h1>
-
-    <section>
-      <h2>About This Course</h2>
-      <p>Details about what you're learning this semester.</p>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <img src="images/hero.jpg" alt="City View" />
+      <div class="cta">
+        <h2>Empowering Local Business</h2>
+        <a href="join.html" class="cta-button">Join the Chamber</a>
+      </div>
     </section>
 
-    <section>
-      <h2>Course Certificate</h2>
-      <div id="courseContainer"></div>
-      <p>Total Credits: <span id="creditCount">0</span></p>
-      <button onclick="filterCourses('all')">All</button>
-      <button onclick="filterCourses('wdd')">WDD Courses</button>
-      <button onclick="filterCourses('cse')">CSE Courses</button>
+    <!-- CURRENT EVENTS -->
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li>June 15: Business Networking Luncheon</li>
+        <li>June 20: Community Market Day</li>
+        <li>July 1: Leadership Workshop</li>
+      </ul>
     </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>Contact info or relevant links.</p>
+    <!-- WEATHER SECTION -->
+    <section class="weather">
+      <h2>Current Weather</h2>
+      <div id="current-weather">
+        <p><strong>Temperature:</strong> <span id="temp"></span></p>
+        <p><strong>Description:</strong> <span id="description"></span></p>
+      </div>
+      <div id="forecast">
+        <h3>3-Day Forecast</h3>
+        <ul id="forecast-list"></ul>
+      </div>
+    </section>
+
+    <!-- SPOTLIGHT SECTION -->
+    <section class="spotlights">
+      <h2>Business Spotlights</h2>
+      <div class="spotlight-container" id="spotlights"></div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> Fatih Sorucu | Turkey</p>
+    <p>&copy; <span id="year"></span> San Miguel Chamber of Commerce | Fatih Sorucu</p>
     <p id="lastModified"></p>
   </footer>
 </body>
